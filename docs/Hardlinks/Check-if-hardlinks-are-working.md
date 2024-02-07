@@ -35,7 +35,11 @@ You will get a listing of all your files and on the left side you will see a cou
 
 - Red rectangle - Not Hardlinked
 - Green rectangle - Hardlinks
-- Blue rectangle - Folders/Directories you will need to go in to them to check if the files are hardlinked.
+- Blue rectangle - Folders/Directories you will need to go in to them to check if the files are hardlinked.*
+
+*Or you can use one of these:
+`ls -al -R` (list all files recursively)
+`find . -size +10000k -ls` (find all files recursively with size over the given value and list with `ls`. Good for just showing your media files to find any that are not hardlinked)
 
 ---
 
